@@ -1,0 +1,54 @@
+//Classe Calculadora
+public class Calculadora {
+	double numero1;
+	double numnero2;
+	
+	double somar (double numero1, double numero2){
+		return numero1 + numero2;
+	}
+	
+	double dividir (double numero1, double numero2){
+		return numero1 / numero2;
+	
+	}
+	
+	double subtrair (double numero1, double numero2){
+		return numero1 - numero2;
+	
+	}
+	
+	double multiplicar (double numero1, double numero2){
+		return numero1 * numero2; 
+	}
+}
+
+//Classe Principal
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Instanciação de Classe
+		//Primeiro vem o nome da classe que você criou no nosso exemplo
+		//A classe é Triangulo_Retangulo
+		//Depois vem o nome do nosso objeto exemplo
+		//Triangulo_retangulo PrimeiroTriangulo = new Triangulo_Retangulo();
+		// Nome sempre precisa estar igual a classe
+		
+		Calculadora primeiraOperacoes = new Calculadora ();
+		
+		//Chamando método
+		//Primeiro coloca-se o nome do objeto que você instanciou
+		//Depois coloca . e o nome do seu método
+		//abre e fecha parenteses e da uma valor para os parametros que vocÊ pediu no método
+		
+		System.out.println("Essa eh sua operação dividir  " + primeiraOperacoes.dividir(100, 2));
+		
+		System.out.println("Essa eh sua operação multiplicar  " + primeiraOperacoes.multiplicar(2, 2));
+		
+		System.out.println("Essa eh sua operação subtrair  " + primeiraOperacoes.subtrair(15, 5));
+		
+		System.out.println("Essa eh sua operação somar  " + primeiraOperacoes.somar(10, 20));
+		
+	}	
+}
