@@ -1,0 +1,65 @@
+//Classe Triangulo / Retangulo
+public class Triangulo_Retangulo {
+	
+	double base;
+	double altura;
+	
+	   
+	//Como declarar um método
+	//Pimeiro se coloca o tipo dele(double, int, boolean ou String)
+	//Depois se da o nome dele exemplo int calcularIdade
+	//E por último se abre parenteses () e dentro deles se coloca os paramentros, caso tenha algum
+	//A cada nova variável é necessário colocar o tipo da variável no parametro
+	//int calcularIdade (int anoNascimento , int anoAtual)
+	//int calcularIdade(int idade) estou pedindo uma variavel chamada idade dentro do paramentro do método
+	//() - Isso aqui é usado para colocar parametro
+	//Após tudo isso abra e feche {} 
+	//E dentro das {} coloque seu código, ou seja, o que o método deve fazer
+	//Caso você tenha dado algum dos tipos double, int, boolean ou String
+	//Ao seu método, você deverá por obrigação colocar um return dentro dele
+	//Pois quando o método não é void(ou seja sem retorno) deve haver um return
+	//Na frente do return se coloca a conta a ser efetuada exemplo
+	// int calcularIdade(int anoNascimento , int anoAtual){
+	//return anoAtual - anoNascimento}
+	
+	
+	double calcularAreaTriangulo (double base,double altura){
+		return base*altura/2;
+
+	}
+	
+	double calcularAreaRetangulo (double base,double altura){
+		return base*altura;
+	}
+	}
+  
+  //Classe Principal
+  public class Principal {
+
+	public static void main(String[] args) {
+		
+		//Instanciação de Classe
+		//Primeiro vem o nome da classe que você criou no nosso exemplo
+		//A classe é Triangulo_Retangulo
+		//Depois vem o nome do nosso objeto exemplo
+		//Triangulo_retangulo PrimeiroTriangulo = new Triangulo_Retangulo();
+		// Nome sempre precisa estar igual a classe
+		
+		Triangulo_Retangulo PrimeiroTriangulo = new Triangulo_Retangulo();
+		
+		Triangulo_Retangulo PrimeiroRetangulo = new Triangulo_Retangulo ();
+		
+		//Chamando método
+		//Primeiro coloca-se o nome do objeto que você instanciou
+		//Depois coloca . e o nome do seu método
+		//abre e fecha parenteses e da uma valor para os parametros que vocÊ pediu no método
+		
+		System.out.println("Essa eh a aréa do triangulo " + PrimeiroTriangulo.calcularAreaTriangulo(40, 10) );
+		
+		System.out.println ("Essa eh a aréa do retangulo " + PrimeiroRetangulo.calcularAreaRetangulo(80, 10));
+		
+		
+
+	}
+
+}
